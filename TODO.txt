@@ -4,3 +4,25 @@
 4) Cherry pick FROM { LandonApi and WebApi } TO Coffee Api
 5) Cherry pick FROM { GraniteHouse,  } TO NotDonkeyApp - make it one big good web app
 6) NUnit Coffee Api, Granite MVC, NotDonkey MVC
+
+
+WHAT IS USEFULL IN APP : 
+
+1) GraniteHouse : 
+*
+*
+*
+
+2) NUnit Project : 
+* All types of unit tests
+
+3) LandonApi :
+*
+*
+*
+
+4) WebApi :
+*
+*
+*
+*
