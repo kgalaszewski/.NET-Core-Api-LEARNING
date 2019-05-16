@@ -2,5 +2,5 @@
 2) Add NotDonkey App
 3) Add NUnit Project
 4) Cherry pick FROM { LandonApi and WebApi } TO Coffee Api
-5) Cherry pick FROM { } TO GraniteHouse and NotDonkeyApp
+5) Cherry pick FROM { GraniteHouse,  } TO NotDonkeyApp - make it one big good web app
 6) NUnit Coffee Api, Granite MVC, NotDonkey MVC
