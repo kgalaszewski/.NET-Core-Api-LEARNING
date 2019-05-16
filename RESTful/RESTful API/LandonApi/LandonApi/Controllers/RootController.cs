@@ -21,6 +21,10 @@ namespace LandonApi.Controllers
                 rooms = new
                 {
                     href = Url.Link(nameof(RoomsController.GetRooms), null)
+                },
+                hotelinfo = new
+                {
+                    href = Url.Link(nameof(InfoController.GetInfo), null)
                 }
             };
 
