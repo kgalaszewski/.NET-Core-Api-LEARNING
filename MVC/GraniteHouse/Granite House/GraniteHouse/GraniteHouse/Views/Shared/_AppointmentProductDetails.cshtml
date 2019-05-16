@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Products>
+@*
+	For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@if (Model.Any())
+{
+	<table class="table table-striped" width="100%">
+		<tr class="table-info">
+			<th style="text-align:center; width:20%">
+				[Product]
+			</th>
+			<th style="text-align:center; width:20%">
+				<label asp-for="@Model.FirstOrDefault().Name"></label>
+			</th>
+			<th style="text-align:center; width:20%">
+				<label asp-for="@Model.FirstOrDefault().Price"></label>
+			</th>
+			<th style="text-align:center; width:20%">
+				<label asp-for="@Model.FirstOrDefault().ShadeColor"></label>
+			</th>
+			<th style="text-align:center; width:20%">
+				<label asp-for="@Model.FirstOrDefault().ProductType.Name"></label>
+			</th>
+			<th style="text-align:center; width:20%">
+			</th>
+		</tr>
+		@foreach (var product in Model)
+		{
+			<tr style="padding:50px">
+				<td>
+					<a asp-area="Customer" asp-controller="Home" asp-action="Details" asp-route-Id="@product.Id">
+						<img src="@product.Image" width="100%" style="margin:auto; display:block; border-radius:5px; border:1px solid #bbb9b9" />
+					</a> <!-- Po kliknieciu w zdj w koszyku idziemy do detailsow -->
+				</td>
+				<td style="text-align:center">
+					@Html.DisplayFor(x => product.Name)
+				</td>
+				<td style="text-align:center">
+					@Html.DisplayFor(x => product.Price)
+				</td>
+				<td style="text-align:center">
+					@Html.DisplayFor(x => product.ShadeColor)
+				</td>
+				<td style="text-align:center">
+					@Html.DisplayFor(x => product.ProductType.Name)
+				</td>
+			</tr>
+		}
+	</table>
+}
+else
+{
+	<div>No Items added to shopping cart</div>
+}

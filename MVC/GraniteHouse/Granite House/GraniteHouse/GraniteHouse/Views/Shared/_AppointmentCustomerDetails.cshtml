@@ -1,0 +1,24 @@
+﻿@model GraniteHouse.Models.Appointments
+
+<h4 class="text-success">Appointment Details</h4>
+
+<div style="height:100%; background-color:aliceblue" class="container border">
+	<table class="col-12">
+		<tr>
+			<td width="20%;">Full Name</td>
+			<td><b>@Html.DisplayFor(x => Model.CustomerName)</b></td>
+		</tr>
+		<tr>
+			<td width="20%;">Email</td>
+			<td><b>@Html.DisplayFor(x => Model.CustomerEmail)</b></td>
+		</tr>
+		<tr>
+			<td width="20%;">Phone Number</td>
+			<td><b>@Html.DisplayFor(x => Model.CustomePhoneNumber)</b></td>
+		</tr>
+		<tr>
+			<td width="20%;">Appointment Date</td>
+			<td><b>@Html.DisplayFor(x => Model.AppointmentDate)</b></td>
+		</tr>
+	</table>
+</div>

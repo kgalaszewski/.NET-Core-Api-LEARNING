@@ -1,0 +1,95 @@
+﻿@model GraniteHouse.Models.Products
+@using GraniteHouse.Extensions
+@using Microsoft.AspNetCore.Http
+@{
+	ViewData["Title"] = "Details";
+}
+
+@inject IHttpContextAccessor HttpContextAccessor
+
+<br /><br />
+<h2>Product Details</h2>
+<br />
+<form method="post">
+	<div class="form-group">
+		<div class="p-4 border rounded row">
+			<div class="col-8">
+				<div class="form-group row">
+					<div class="col-4">
+						<label asp-for="Name"></label>
+					</div>
+					<div class="col-8">
+						<label>@Html.DisplayFor(x => Model.Name)</label>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-4">
+						<label asp-for="Price"></label>
+					</div>
+					<div class="col-8">
+						<label>@Html.DisplayFor(x => Model.Price)</label>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-4">
+						<label asp-for="ProductType"></label>
+					</div>
+					<div class="col-8">
+						<label>@Html.DisplayFor(x => Model.ProductType.Name)</label>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-4">
+						<label asp-for="SpecialTag"></label>
+					</div>
+					<div class="col-8">
+						<label>@Html.DisplayFor(x => Model.SpecialTag.Name)</label>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-4">
+						<label asp-for="ShadeColor"></label>
+					</div>
+					<div class="col-8">
+						<label>@Html.DisplayFor(x => Model.ShadeColor)</label>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-8">
+						@{
+							bool isInBag = false;
+							List<int> lstCart = HttpContextAccessor.HttpContext.Session.Get<List<int>>("ssShoppingCart");
+
+							if (lstCart != null && lstCart.Contains(Model.Id))
+							{
+								isInBag = true;
+							}
+						}
+
+						@if (isInBag)
+						{
+							<button type="submit" asp-action="Remove" asp-route-Id="@Model.Id" class="btn btn-danger form-control">Remove from Cart</button>
+						}
+						else
+						{
+							<button type="submit" asp-route-Id="@Model.Id" class="btn btn-primary form-control">Add To Cart</button>
+						}
+
+					</div>
+				</div>
+			</div>
+			<div class="col-1"></div>
+			<div class="col-3">
+				<img src="@Model.Image" width="100%" style="border-radius:5px; border:1px solid #bbb9b9;" />
+				@{
+					string msgToDisplay = Model.Available ? "In Stock" : "Currently not available";
+					string clr = Model.Available ? "green" : "red";
+					string pxs = Model.Available ? "35px" : "15px";
+					<label style="color:@clr; font-size:@pxs;"> @msgToDisplay</label>
+				}
+			</div>
+		</div>
+		<input hidden asp-for="Id" />
+		<a asp-action="Index" class="btn btn-success">Back to List</a>
+	</div>
+</form>

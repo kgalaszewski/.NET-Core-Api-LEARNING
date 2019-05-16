@@ -1,0 +1,15 @@
+﻿@model  GraniteHouse.Models.ViewModel.ShoppingCartViewModel
+@{
+    ViewData["Title"] = "AppointmentConfirmation";
+}
+<br />
+<h2 class="text-info">Appointment Confirmation</h2>
+<div class="form-text">
+	Your appointment has been submitted.
+</div>
+<br />
+
+<partial name="~/Views/Shared/_appointmentCustomerDetails.cshtml" model="Model.Appointments" />
+<partial name="~/Views/Shared/_appointmentProductDetails.cshtml" model="Model.Products" />
+
+<a asp-area="Customer" asp-controller="Home" asp-action="Index" class="btn btn-success">Back to Products</a>
