@@ -37,10 +37,6 @@ namespace LandonApi
             {
                 app.UseDeveloperExceptionPage();
 
-                app.UseSwaggerUi3(options =>
-                {
-                    options.GeneratorSettings.DefaultPropertyNameHandling = NJsonSchema.PropertyNameHandling.CamelCase;
-                });
             }
             else
             {
