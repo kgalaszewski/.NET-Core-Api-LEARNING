@@ -1,0 +1,100 @@
+﻿@model AnimalNotDonkey
+@using NotDonkeyApp_UG.Data;
+@{
+    ViewData["Title"] = "UserProfile";
+}
+<head>
+    <script src="Scripts/jquery-3.0.0.js"></script>
+    <script src="Scripts/popper.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+</head>
+<body style="background-color:lightblue">
+    @if (StaticDetails.CurrentUserId != -1)
+    {
+        <h1>✌.ʕʘ‿ʘʔ.✌</h1>
+        <br />
+
+        <h3>Phone Number : @Html.DisplayFor(x => x.OwnerPhoneNumber)</h3>
+        <br />
+        <style>
+            #xyz {
+                transition: all linear 0.5s;
+                background-color: lightblue;
+                height: 100px;
+            }
+
+            .ng-hide {
+                height: 0;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+
+        <div ng-app="myApp">
+
+            Hide my details : <input type="checkbox" ng-model="myCheck">
+
+            <div ng-hide="myCheck" id="xyz">
+                <h3>Breed : @Html.DisplayFor(x => x.AnimalType)</h3>
+                <h3>Sex : @Html.DisplayFor(x => x.Sex)</h3>
+                <h3>Weight : @Html.DisplayFor(x => x.Weight)</h3>
+                <h3>Password : @Html.DisplayFor(x => x.Password)</h3>
+                <h3>Name : @Html.DisplayFor(x => x.Name)</h3>
+            </div>
+
+            <script>
+                var app = angular.module('myApp', ['ngAnimate']);
+            </script>
+
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <input type="number" id="nrtel" />
+        <br /><br />
+        <button class="btn btn-danger" onclick="editNumber()">Edit number</button>
+        <br /><br /><br />
+
+        <a class="btn btn-danger" onclick="hideAndDelete()" id="deleteBtn">Delete Account</a>
+    }
+
+    <a class="btn btn-primary" asp-controller="AnimalNotDonkeys" asp-action="Index">Back to main page</a>
+
+
+    <br /><br />
+
+    <script>
+        function hideAndDelete() {
+            deleteAccount();
+            window.location.href = 'https://localhost:44357/AnimalNotDonkeys/';
+        }
+
+        function deleteAccount() {
+            $.ajax({
+                url: 'https://localhost:44357/RestAnimal/',
+                type: 'DELETE',
+                success: function (result) {
+                }
+            });
+        }
+
+        function editNumber() {
+            var newNumber = document.getElementById("nrtel").value;
+
+            $.ajax({
+                url: 'https://localhost:44357/RestAnimal/' + newNumber,
+                type: 'PUT',
+                success: function (result) {
+                }
+            });
+
+            window.location.href = 'https://localhost:44357/AnimalNotDonkeys/';
+        }
+    </script>
+</body>

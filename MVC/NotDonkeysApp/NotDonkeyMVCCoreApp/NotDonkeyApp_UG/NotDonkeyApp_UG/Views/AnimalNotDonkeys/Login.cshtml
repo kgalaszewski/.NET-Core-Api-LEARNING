@@ -1,0 +1,46 @@
+﻿@model AnimalNotDonkey
+@{
+    ViewData["Title"] = "Login";
+}
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body style="background-color:lightblue">
+    <h2>Login into our awesome service ...   ̿'̿'\̵͇̿̿\з=( ͠° ͟ʖ ͡°)=ε/̵͇̿̿/'̿̿ ̿ ̿ ̿ ̿ ̿</h2>
+    <br />
+
+    <form asp-action="Login">
+        <label asp-for="OwnerPhoneNumber" class="control-label"> Owner phone number</label>
+        <input asp-for="OwnerPhoneNumber" class="form-control" />
+        <br />
+        <label asp-for="Password" class="control-label"></label>
+        <input asp-for="Password" class="form-control" />
+        <br />
+        <input type="submit" value="Login" class="btn btn-success" />
+    </form>
+    <div ng-app="myApp3" ng-controller="myCtrl3">
+        <br />
+        <button class="btn btn-danger" ng-click="myFunc()">Read rules of our service </button>
+
+        <div ng-show="showMe">
+            <h1 style="color:black">Rules: </h1>
+            <ul>
+                <li>Osiolki sa zle</li>
+                <li>Ten serwis jest fajny</li>
+                <li>Nie ma bugow, wszystko jest przewidziane</li>
+            </ul>
+            <br />
+        </div>
+
+    </div>
+    <script>
+        var app = angular.module('myApp3', []);
+        app.controller('myCtrl3', function ($scope) {
+            $scope.showMe = false;
+            $scope.myFunc = function () {
+                $scope.showMe = !$scope.showMe;
+            }
+        });
+    </script>
+</body>

@@ -1,0 +1,79 @@
+﻿@model NotDonkeyApp_UG.Models.AnimalNotDonkey
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body style="background-color:lightblue">
+    <br />
+    <h1>Create your animal profile and find its love ☜(˚▽˚)☞</h1>
+
+    <br />
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="OwnerPhoneNumber" class="control-label">Owner Phone Number</label>
+                    <input asp-for="OwnerPhoneNumber" class="form-control" />
+                    <span asp-validation-for="OwnerPhoneNumber" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password" class="control-label"></label>
+                    <input asp-for="Password" class="form-control" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AnimalType" class="control-label">Animal Type</label>
+                    <input asp-for="AnimalType" class="form-control" />
+                    <span asp-validation-for="AnimalType" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Sex" class="control-label"></label> [ male / female]
+                    <input asp-for="Sex" class="form-control" />
+                    <span asp-validation-for="Sex" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Weight" class="control-label"></label> [ kg ]
+                    <input asp-for="Weight" class="form-control" />
+                    <span asp-validation-for="Weight" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AdditionalDescription" class="control-label">Additional Description</label>
+                    <input asp-for="AdditionalDescription" class="form-control" />
+                    <span asp-validation-for="AdditionalDescription" class="text-danger"></span>
+                </div>
+                <div ng-app="" ng-init="mySwitch=true">
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input ng-model="mySwitch" asp-for="IsDonkey" /> @Html.DisplayNameFor(model => model.IsDonkey)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group hidden">
+                        <label asp-for="AnimalsYouLike" class="control-label"></label>
+                        <input asp-for="AnimalsYouLike" class="form-control" />
+                        <span asp-validation-for="AnimalsYouLike" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input ng-disabled="mySwitch" type="submit" value="Create" class="btn btn-danger" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</body>

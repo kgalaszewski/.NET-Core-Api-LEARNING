@@ -1,0 +1,15 @@
+﻿@using NotDonkeyApp_UG.Data;
+@{
+    ViewData["Title"] = "ThrowErrorMessage";
+}
+
+<h1 style="color:red">Ooooops ! : (  @StaticDetails.AdditionalErrorInfo</h1>
+<h4 style="color:darkorange">@StaticDetails.CurrentErrorMsg</h4>
+<a class="btn btn-primary" asp-controller="AnimalNotDonkeys" asp-action="Index">Go back to main page !</a>
+<br />
+<div>
+    <td><img src="@StaticDetails.FullPathToErrorImg" width="50%" height="600px" style="margin:auto; display:block; border-radius:5px; border:1px solid #bbb9b9" /></td>
+</div>
+<br />
+
+

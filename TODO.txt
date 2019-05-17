@@ -1,34 +1,36 @@
-1) Add GraniteHouse
-2) Add NotDonkey App
-3) Add NUnit Project
-4) Cherry pick FROM { LandonApi and WebApi } TO Coffee Api
-5) Cherry pick FROM { GraniteHouse,  } TO NotDonkeyApp - make it one big good web app
-6) NUnit Coffee Api, Granite MVC, NotDonkey MVC
+1) Cherry pick FROM { GraniteHouse,  } TO NotDonkeyApp - make it one big good web app
+2) Cherry pick FROM { LandonApi and WebApi } TO Coffee Api
+3) NUnit NotDonkey MVC, Coffee Api
 
 
 WHAT IS USEFULL IN APP : 
 
 1) GraniteHouse : 
-*
-*
-*
+* Areas, customer and admin
+* Extensions - Extension methods folder
+* View Models
+* Atrybuty w modelu [Display(Name="Product Type")], [ForeignKey("ProductTypeId")], [NotMapped]
+* Utility folder - StaticDetails class
+* partial views
 
 2) NUnit Project : 
 * All types of unit tests
 
 3) LandonApi :
-*
-*
-*
-
+* Produces() or ProducesResponseType()
+* [HttpGet(Name = nameof(GetRoot))]
+* RootController with GetRoot method, ktory jako response zwraca dostepne Linki, endpointy i metody
+* JsonExceptionFilter - customowa klasa
 4) WebApi :
-*
-*
-*
+* Repository Pattern with dependency injection prepared for Unit Testing
+* [StringLength], [EmailAddress], [Phone], [DataType(DataType.Date)]
+* ICollection<T> jak chcemy liste czegos 
 *
 5) California : 
-*
-*
-*
-*
-*
+* app.UseExceptionHandler(url); instead of hardcoded trycatch and view
+* [EmailAddress, MaxLength(500)], [DataType(DataType.Password)]
+* [Compare("Password", ErrorMessage = "Passwords must match")], [Display(Name = "Confirm Password")]
+* Rozne bazy danych, kilkukrotne dodanie w Startup.cs roznego dbContext
+6) QuotesApi
+* FromBody, FromRoute itd
+* [HttpGet("{id}", Name = "Get")]
