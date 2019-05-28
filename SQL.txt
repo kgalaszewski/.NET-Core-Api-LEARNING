@@ -1,4 +1,4 @@
-#########################################################################
+﻿#########################################################################
 zakładanie uzytkownika
 create login st with password='haslo123'
 create user st for login st;
@@ -23,17 +23,15 @@ grant insert on dane to st
 
 
 #########################################################################
-Do roli Rola_Towar przypisać uprawnienia wykonywania procedury o nazwie WyswietlTowary.
-create procedure WyswietlTowary
+Tworzenie prodedurki : 
+create procedure RobCos
 as
 begin
 	select * from dane
 end
 go
 
-execute WyswietlTowary
-
-grant execute on WyswietlTowary to rola_towar
+execute RobCos
 
 
 #########################################################################
