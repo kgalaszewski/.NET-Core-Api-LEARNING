@@ -55,6 +55,21 @@ namespace NotDonkeyApp_UG.Migrations
 
                     b.ToTable("NotDonkeys");
                 });
+
+            modelBuilder.Entity("NotDonkeyApp_UG.Models.AnimalWikiInformation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AnimalName");
+
+                    b.Property<string>("Information");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AnimalsInformations");
+                });
 #pragma warning restore 612, 618
         }
     }

@@ -14,5 +14,6 @@ namespace GraniteHouse.Data
         }
 
         public DbSet<AnimalNotDonkey> NotDonkeys { get; set; }
+        public DbSet<AnimalWikiInformation> AnimalsInformations { get; set; }
     }
 }

@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace NotDonkeyApp_UG.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190510185402_addedNotDonkeyModel")]
-    partial class addedNotDonkeyModel
+    [Migration("20190531100256_wtf")]
+    partial class wtf
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -56,6 +56,21 @@ namespace NotDonkeyApp_UG.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("NotDonkeys");
+                });
+
+            modelBuilder.Entity("NotDonkeyApp_UG.Models.AnimalWikiInformation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("AnimalName");
+
+                    b.Property<string>("Information");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("AnimalsInformations");
                 });
 #pragma warning restore 612, 618
         }

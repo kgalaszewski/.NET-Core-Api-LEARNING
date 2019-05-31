@@ -21,7 +21,6 @@ namespace NotDonkeyApp_UG.Controllers
             _db = db;
         }
 
-        #region Controller Basic Methods
         public IActionResult Index()
         {
             try
@@ -33,6 +32,26 @@ namespace NotDonkeyApp_UG.Controllers
             catch (Exception ex)
             {
                 SetErrorDetails(ex, "An error occured during trying to reach main page");
+                return RedirectToAction("ThrowErrorMessage");
+            }
+        }
+
+        public IActionResult AllAnimalsInformations()
+        {
+            try
+            {
+                OneTimeAddInformations();
+
+                var informationsToReturn = _db.AnimalsInformations.ToList();
+                if (informationsToReturn.Any())
+                    return View(informationsToReturn);
+
+                SetErrorDetails(new Exception("Woops"), "List of informations about animals is currently empty");
+                return RedirectToAction("ThrowErrorMessage");
+            }
+            catch (Exception ex)
+            {
+                SetErrorDetails(ex, "An error occured during trying to display all informations about animals");
                 return RedirectToAction("ThrowErrorMessage");
             }
         }
@@ -194,14 +213,28 @@ namespace NotDonkeyApp_UG.Controllers
             }
         }
 
-        #endregion
-
-        #region Helper Methods
+        // Helper methods
         private void SetErrorDetails(Exception ex, string msgToDisplay)
         {
             StaticDetails.CurrentErrorMsg = $"An error occured due to : {ex.Message}";
             StaticDetails.AdditionalErrorInfo = msgToDisplay;
         }
-        #endregion
+
+        private void OneTimeAddInformations()
+        {
+            if (_db.AnimalsInformations.ToList().Count == 0)
+            {
+                _db.AnimalsInformations.Add(new AnimalWikiInformation() { AnimalName = "donkey", Information = AnimalWikiInformations.OsiolInformation });
+                _db.AnimalsInformations.Add(new AnimalWikiInformation() { AnimalName = "kon", Information = AnimalWikiInformations.KonInformation });
+                _db.AnimalsInformations.Add(new AnimalWikiInformation() { AnimalName = "kot", Information = AnimalWikiInformations.KotInformation });
+                _db.AnimalsInformations.Add(new AnimalWikiInformation() { AnimalName = "krab", Information = AnimalWikiInformations.KrabInformation });
+                _db.AnimalsInformations.Add(new AnimalWikiInformation() { AnimalName = "niedzwiedz", Information = AnimalWikiInformations.NiedzwiedzInformation });
+                _db.AnimalsInformations.Add(new AnimalWikiInformation() { AnimalName = "papuga", Information = AnimalWikiInformations.PapugaInformation });
+                _db.AnimalsInformations.Add(new AnimalWikiInformation() { AnimalName = "pies", Information = AnimalWikiInformations.PiesInformation });
+                _db.AnimalsInformations.Add(new AnimalWikiInformation() { AnimalName = "swinia", Information = AnimalWikiInformations.SwiniaInformation });
+                _db.AnimalsInformations.Add(new AnimalWikiInformation() { AnimalName = "zyrafa", Information = AnimalWikiInformations.ZyrafaInformation });
+                _db.SaveChanges();
+            }
+        }
     }
 }
