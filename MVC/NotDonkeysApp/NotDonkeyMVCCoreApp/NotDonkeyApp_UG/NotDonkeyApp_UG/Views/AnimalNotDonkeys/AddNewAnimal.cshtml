@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "AddNewAnimal";
+}
+
+<body style="background-color:lightblue">
+    <h2>Add new information about animal</h2>
+    <br />
+    <div ng-controller="ExampleController">
+        <form novalidate class="simple-form">
+            <label>Name: <input type="text" ng-model="animal.name" /></label><br />
+            <label>Information: <input type="text" ng-model="animal.info" /></label><br />
+            <input type="submit" ng-click="add(animal)" value="Add" />
+        </form>
+    </div>
+
+    <script>
+
+    </script>
+</body>

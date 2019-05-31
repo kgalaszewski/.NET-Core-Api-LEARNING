@@ -36,6 +36,17 @@ namespace NotDonkeyApp_UG.Controllers
             }
         }
 
+        public IActionResult AddNewAnimal()
+        {
+            return View();
+        }
+
+        public IActionResult UpdateAnimal(int Id)
+        {
+            var info = _db.AnimalsInformations.Find(Id);
+            return View(info);
+        }
+
         public IActionResult AllAnimalsInformations()
         {
             try

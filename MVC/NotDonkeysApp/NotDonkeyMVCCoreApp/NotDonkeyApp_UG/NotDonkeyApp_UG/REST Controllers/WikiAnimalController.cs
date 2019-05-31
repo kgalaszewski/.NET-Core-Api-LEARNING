@@ -23,9 +23,9 @@ namespace NotDonkeyApp_UG.Controllers
         }
 
         [HttpGet]
-        public List<AnimalNotDonkey> Get()
+        public string Get()
         {
-            return _db.NotDonkeys.ToList();
+            return "Get()";
         }
 
         [HttpPost]

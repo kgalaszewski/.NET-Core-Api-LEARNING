@@ -1,7 +1,44 @@
 ﻿@model IEnumerable<AnimalWikiInformation>
+@using NotDonkeyApp_UG.Data;
 @{
     ViewData["Title"] = "Informations";
 }
-
-<h2>Animal Wiki</h2>
-
+<body style="background-color:lightblue">
+    <h2>Animal Wiki</h2>
+    <br />
+    <div ng-app="MyApp" ng-controller="MyController">
+        <a class="btn btn-success" asp-controller="AnimalNotDonkeys" asp-action="AddNewAnimal">Add new Animal Info</a>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#Animal</th>
+                    <th scope="col">#Informations about animal</th>
+                    <th scope="col">#Help us improve</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var info in Model)
+                {
+                    var animalUrl = StaticDetails.AvatarUrl + info.AnimalName + ".jpg";
+                    <tr>
+                        <th scope="row"><img src="@animalUrl" width="30%" height="70px" style="margin:auto; display:block; border-radius:5px; border:1px solid #bbb9b9" /><br />@info.AnimalName</th>
+                        <td>@info.Information</td>
+                        <td>
+                            <input type="button" class="btn btn-danger" value="Report Info Outdated" ng-click="ShowAlert()" />
+                            <a class="btn btn-primary" asp-controller="AnimalNotDonkeys" asp-action="UpdateAnimal" asp-route-Id="@info.Id">Update Info</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+    <script type="text/javascript">
+        var app = angular.module('MyApp', [])
+        app.controller('MyController', function ($scope, $window) {
+            $scope.ShowAlert = function () {
+                $window.alert("Hello, thank you for reporting. We will update information as soon as possible");
+            }
+        });
+    </script>
+    </body>
