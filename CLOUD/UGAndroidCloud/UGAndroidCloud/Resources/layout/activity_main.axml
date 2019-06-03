@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+	android:padding="16dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+	<TextView
+		android:gravity="center"
+		android:text="Add new Animal information to our Wiki"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<EditText
+		android:id="@+id/Type"
+		android:hint="Type of Animal"
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<EditText
+		android:id="@+id/Breed"
+		android:hint="Breed of Animal"
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<EditText
+		android:id="@+id/Name"
+		android:hint="Name of Animal"
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<EditText
+		android:id="@+id/Info"
+		android:hint="Information about Animal"
+		android:layout_marginTop="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+	<Button
+		android:id="@+id/saveButton"
+		android:text="ADD TO WIKI"
+		android:layout_marginTop="20dp"
+		android:layout_width="match_parent"
+		android:layout_height="40dp"/>
+
+	<Button
+		android:id="@+id/WikiButton"
+		android:text="CHECK CURRENT WIKI INFO"
+		android:layout_marginTop="110dp"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"/>
+</LinearLayout>
