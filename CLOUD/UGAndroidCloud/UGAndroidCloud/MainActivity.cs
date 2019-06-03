@@ -17,8 +17,9 @@ namespace UGAndroidCloud
         EditText Breed;
         EditText Name;
         EditText Info;
+        EditText AllInfo;
         Button saveButton;
-        Button WikiButton;
+        Button refreshButton;
         FirebaseFirestore database;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -27,6 +28,7 @@ namespace UGAndroidCloud
             SetContentView(Resource.Layout.activity_main);
             ConnectViews();
             database = GetDataBase(); // z tym moze byc problem, musialem deklarowac typ, powinien byc wczesniej?
+            AllInfo.Text = GetAllCurrentInfo();
         }
 
         void ConnectViews()
@@ -35,14 +37,17 @@ namespace UGAndroidCloud
             Breed = (EditText)FindViewById(Resource.Id.Breed);
             Name = (EditText)FindViewById(Resource.Id.Name);
             Info = (EditText)FindViewById(Resource.Id.Info);
+            AllInfo = (EditText)FindViewById(Resource.Id.AllInfo);
             saveButton = (Button)FindViewById(Resource.Id.saveButton);
-            WikiButton = (Button)FindViewById(Resource.Id.WikiButton);
-
-            WikiButton.Click += (s, e) => {
-                Intent nextActivity = new Intent(this, typeof(WikiActivity));
-                // nextActivity.PutExtra("Dane", value jakiegos textboxa albo np cos z bazy danych);
-            };
+            refreshButton = (Button)FindViewById(Resource.Id.refreshButton);
+            
             saveButton.Click += SaveButton_Click;
+            refreshButton.Click += refreshButton_Click;
+        }
+
+        public string GetAllCurrentInfo()
+        {
+            return "";
         }
 
         private void SaveButton_Click(object sender, System.EventArgs e)
@@ -55,6 +60,11 @@ namespace UGAndroidCloud
 
             DocumentReference docRef = database.Collection("Infos").Document();
             docRef.Set(map);
+        }
+
+        private void refreshButton_Click(object sender, System.EventArgs e)
+        {
+            AllInfo.Text = GetAllCurrentInfo();
         }
 
         public FirebaseFirestore GetDataBase()
