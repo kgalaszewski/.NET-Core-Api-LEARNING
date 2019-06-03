@@ -7,6 +7,7 @@ using Firebase.Firestore;
 using Firebase;
 using Java.Util;
 using Android.Content;
+using System.Threading.Tasks;
 
 namespace UGAndroidCloud
 {
@@ -49,6 +50,13 @@ namespace UGAndroidCloud
         {
             return "";
         }
+
+        //public async Task<string> GetAllCurrentInfo()
+        //{
+        //    DocumentReference docRef = database.Collection("cities").Document("SF");
+        //    DocumentSnapshot snapshot = await docRef.SnapshotAsync();
+        //    return "";
+        //}
 
         private void SaveButton_Click(object sender, System.EventArgs e)
         {

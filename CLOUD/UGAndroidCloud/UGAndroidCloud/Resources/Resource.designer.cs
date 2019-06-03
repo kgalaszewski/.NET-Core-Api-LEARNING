@@ -2327,11 +2327,8 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a0032
 			public const int ALT = 2131361842;
 			
-			// aapt resource value: 0x7f0a00b2
-			public const int AllInfo = 2131361970;
-			
-			// aapt resource value: 0x7f0a00b3
-			public const int BackButton = 2131361971;
+			// aapt resource value: 0x7f0a0091
+			public const int AllInfo = 2131361937;
 			
 			// aapt resource value: 0x7f0a008c
 			public const int Breed = 2131361932;
@@ -2360,8 +2357,8 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a008b
 			public const int Type = 2131361931;
 			
-			// aapt resource value: 0x7f0a00a1
-			public const int action0 = 2131361953;
+			// aapt resource value: 0x7f0a00a3
+			public const int action0 = 2131361955;
 			
 			// aapt resource value: 0x7f0a007c
 			public const int action_bar = 2131361916;
@@ -2384,17 +2381,17 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a005a
 			public const int action_bar_title = 2131361882;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int action_container = 2131361950;
+			// aapt resource value: 0x7f0a00a0
+			public const int action_container = 2131361952;
 			
 			// aapt resource value: 0x7f0a007d
 			public const int action_context_bar = 2131361917;
 			
-			// aapt resource value: 0x7f0a00a5
-			public const int action_divider = 2131361957;
+			// aapt resource value: 0x7f0a00a7
+			public const int action_divider = 2131361959;
 			
-			// aapt resource value: 0x7f0a009f
-			public const int action_image = 2131361951;
+			// aapt resource value: 0x7f0a00a1
+			public const int action_image = 2131361953;
 			
 			// aapt resource value: 0x7f0a0003
 			public const int action_menu_divider = 2131361795;
@@ -2411,11 +2408,11 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a005c
 			public const int action_mode_close_button = 2131361884;
 			
-			// aapt resource value: 0x7f0a00a0
-			public const int action_text = 2131361952;
+			// aapt resource value: 0x7f0a00a2
+			public const int action_text = 2131361954;
 			
-			// aapt resource value: 0x7f0a00ae
-			public const int actions = 2131361966;
+			// aapt resource value: 0x7f0a00b0
+			public const int actions = 2131361968;
 			
 			// aapt resource value: 0x7f0a005d
 			public const int activity_chooser_view_content = 2131361885;
@@ -2450,8 +2447,8 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a0063
 			public const int buttonPanel = 2131361891;
 			
-			// aapt resource value: 0x7f0a00a2
-			public const int cancel_action = 2131361954;
+			// aapt resource value: 0x7f0a00a4
+			public const int cancel_action = 2131361956;
 			
 			// aapt resource value: 0x7f0a0045
 			public const int center = 2131361861;
@@ -2465,8 +2462,8 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a0073
 			public const int checkbox = 2131361907;
 			
-			// aapt resource value: 0x7f0a00aa
-			public const int chronometer = 2131361962;
+			// aapt resource value: 0x7f0a00ac
+			public const int chronometer = 2131361964;
 			
 			// aapt resource value: 0x7f0a004e
 			public const int clip_horizontal = 2131361870;
@@ -2477,14 +2474,14 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a0039
 			public const int collapseActionView = 2131361849;
 			
-			// aapt resource value: 0x7f0a0092
-			public const int container = 2131361938;
+			// aapt resource value: 0x7f0a0094
+			public const int container = 2131361940;
 			
 			// aapt resource value: 0x7f0a0066
 			public const int contentPanel = 2131361894;
 			
-			// aapt resource value: 0x7f0a0093
-			public const int coordinator = 2131361939;
+			// aapt resource value: 0x7f0a0095
+			public const int coordinator = 2131361941;
 			
 			// aapt resource value: 0x7f0a006d
 			public const int custom = 2131361901;
@@ -2498,20 +2495,20 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a0060
 			public const int default_activity_button = 2131361888;
 			
-			// aapt resource value: 0x7f0a0095
-			public const int design_bottom_sheet = 2131361941;
+			// aapt resource value: 0x7f0a0097
+			public const int design_bottom_sheet = 2131361943;
+			
+			// aapt resource value: 0x7f0a009e
+			public const int design_menu_item_action_area = 2131361950;
+			
+			// aapt resource value: 0x7f0a009d
+			public const int design_menu_item_action_area_stub = 2131361949;
 			
 			// aapt resource value: 0x7f0a009c
-			public const int design_menu_item_action_area = 2131361948;
+			public const int design_menu_item_text = 2131361948;
 			
 			// aapt resource value: 0x7f0a009b
-			public const int design_menu_item_action_area_stub = 2131361947;
-			
-			// aapt resource value: 0x7f0a009a
-			public const int design_menu_item_text = 2131361946;
-			
-			// aapt resource value: 0x7f0a0099
-			public const int design_navigation_view = 2131361945;
+			public const int design_navigation_view = 2131361947;
 			
 			// aapt resource value: 0x7f0a0020
 			public const int disableHome = 2131361824;
@@ -2522,8 +2519,8 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a0030
 			public const int end = 2131361840;
 			
-			// aapt resource value: 0x7f0a00b0
-			public const int end_padder = 2131361968;
+			// aapt resource value: 0x7f0a00b2
+			public const int end_padder = 2131361970;
 			
 			// aapt resource value: 0x7f0a003f
 			public const int enterAlways = 2131361855;
@@ -2567,8 +2564,8 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a0062
 			public const int icon = 2131361890;
 			
-			// aapt resource value: 0x7f0a00af
-			public const int icon_group = 2131361967;
+			// aapt resource value: 0x7f0a00b1
+			public const int icon_group = 2131361969;
 			
 			// aapt resource value: 0x7f0a003a
 			public const int ifRoom = 2131361850;
@@ -2576,8 +2573,8 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a005f
 			public const int image = 2131361887;
 			
-			// aapt resource value: 0x7f0a00ab
-			public const int info = 2131361963;
+			// aapt resource value: 0x7f0a00ad
+			public const int info = 2131361965;
 			
 			// aapt resource value: 0x7f0a0059
 			public const int italic = 2131361881;
@@ -2585,8 +2582,8 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a0000
 			public const int item_touch_helper_previous_elevation = 2131361792;
 			
-			// aapt resource value: 0x7f0a0091
-			public const int largeLabel = 2131361937;
+			// aapt resource value: 0x7f0a0093
+			public const int largeLabel = 2131361939;
 			
 			// aapt resource value: 0x7f0a0049
 			public const int left = 2131361865;
@@ -2606,11 +2603,11 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a00b5
 			public const int masked = 2131361973;
 			
-			// aapt resource value: 0x7f0a00a4
-			public const int media_actions = 2131361956;
+			// aapt resource value: 0x7f0a00a6
+			public const int media_actions = 2131361958;
 			
-			// aapt resource value: 0x7f0a00b1
-			public const int message = 2131361969;
+			// aapt resource value: 0x7f0a00b3
+			public const int message = 2131361971;
 			
 			// aapt resource value: 0x7f0a0031
 			public const int middle = 2131361841;
@@ -2621,8 +2618,8 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a0028
 			public const int multiply = 2131361832;
 			
-			// aapt resource value: 0x7f0a0098
-			public const int navigation_header_container = 2131361944;
+			// aapt resource value: 0x7f0a009a
+			public const int navigation_header_container = 2131361946;
 			
 			// aapt resource value: 0x7f0a003b
 			public const int never = 2131361851;
@@ -2633,14 +2630,14 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a001e
 			public const int normal = 2131361822;
 			
-			// aapt resource value: 0x7f0a00ad
-			public const int notification_background = 2131361965;
+			// aapt resource value: 0x7f0a00af
+			public const int notification_background = 2131361967;
 			
-			// aapt resource value: 0x7f0a00a7
-			public const int notification_main_column = 2131361959;
+			// aapt resource value: 0x7f0a00a9
+			public const int notification_main_column = 2131361961;
 			
-			// aapt resource value: 0x7f0a00a6
-			public const int notification_main_column_container = 2131361958;
+			// aapt resource value: 0x7f0a00a8
+			public const int notification_main_column_container = 2131361960;
 			
 			// aapt resource value: 0x7f0a004c
 			public const int parallax = 2131361868;
@@ -2663,14 +2660,17 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a0075
 			public const int radio = 2131361909;
 			
+			// aapt resource value: 0x7f0a0090
+			public const int refreshButton = 2131361936;
+			
 			// aapt resource value: 0x7f0a004a
 			public const int right = 2131361866;
 			
-			// aapt resource value: 0x7f0a00ac
-			public const int right_icon = 2131361964;
+			// aapt resource value: 0x7f0a00ae
+			public const int right_icon = 2131361966;
 			
-			// aapt resource value: 0x7f0a00a8
-			public const int right_side = 2131361960;
+			// aapt resource value: 0x7f0a00aa
+			public const int right_side = 2131361962;
 			
 			// aapt resource value: 0x7f0a008f
 			public const int saveButton = 2131361935;
@@ -2747,14 +2747,14 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a0025
 			public const int showTitle = 2131361829;
 			
-			// aapt resource value: 0x7f0a0090
-			public const int smallLabel = 2131361936;
+			// aapt resource value: 0x7f0a0092
+			public const int smallLabel = 2131361938;
 			
-			// aapt resource value: 0x7f0a0097
-			public const int snackbar_action = 2131361943;
+			// aapt resource value: 0x7f0a0099
+			public const int snackbar_action = 2131361945;
 			
-			// aapt resource value: 0x7f0a0096
-			public const int snackbar_text = 2131361942;
+			// aapt resource value: 0x7f0a0098
+			public const int snackbar_text = 2131361944;
 			
 			// aapt resource value: 0x7f0a0043
 			public const int snap = 2131361859;
@@ -2777,8 +2777,8 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a004b
 			public const int start = 2131361867;
 			
-			// aapt resource value: 0x7f0a00a3
-			public const int status_bar_latest_event_content = 2131361955;
+			// aapt resource value: 0x7f0a00a5
+			public const int status_bar_latest_event_content = 2131361957;
 			
 			// aapt resource value: 0x7f0a0076
 			public const int submenuarrow = 2131361910;
@@ -2804,8 +2804,8 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a0069
 			public const int textSpacerNoTitle = 2131361897;
 			
-			// aapt resource value: 0x7f0a009d
-			public const int text_input_password_toggle = 2131361949;
+			// aapt resource value: 0x7f0a009f
+			public const int text_input_password_toggle = 2131361951;
 			
 			// aapt resource value: 0x7f0a0014
 			public const int textinput_counter = 2131361812;
@@ -2813,8 +2813,8 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a0015
 			public const int textinput_error = 2131361813;
 			
-			// aapt resource value: 0x7f0a00a9
-			public const int time = 2131361961;
+			// aapt resource value: 0x7f0a00ab
+			public const int time = 2131361963;
 			
 			// aapt resource value: 0x7f0a001c
 			public const int title = 2131361820;
@@ -2831,8 +2831,8 @@ namespace UGAndroidCloud
 			// aapt resource value: 0x7f0a006e
 			public const int topPanel = 2131361902;
 			
-			// aapt resource value: 0x7f0a0094
-			public const int touch_outside = 2131361940;
+			// aapt resource value: 0x7f0a0096
+			public const int touch_outside = 2131361942;
 			
 			// aapt resource value: 0x7f0a000f
 			public const int transition_current_scene = 2131361807;
@@ -3111,9 +3111,6 @@ namespace UGAndroidCloud
 			
 			// aapt resource value: 0x7f04003c
 			public const int tooltip = 2130968636;
-			
-			// aapt resource value: 0x7f04003d
-			public const int WikiLayout = 2130968637;
 			
 			static Layout()
 			{
