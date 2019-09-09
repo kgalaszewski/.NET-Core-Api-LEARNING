@@ -1,0 +1,221 @@
+Code standards - Intermediate : 
+#Code conventions - int
+#code standards usage - nov
+
+
+
+Code review process :
+#code review fundamentals - nov
+#code review tools - nov
+
+
+
+Release strategy :
+#Version control basics (using git, being able to checkout etc)
+#Common operations with version control (create branch, merge)
+#Version control systems (can name most popular distributed VCSs like GIT and Mercurial etc., 
+knows diffrence between rebase and merge, knows the diffrence between centralized and distributed VCS)
+
+
+
+Continuous Integration :
+#CI fundamentals - novice
+#Build tools usage - int (knows at least one tool and uses it, for example MSBuild)
+#CI tools - int (knows at least one tool and uses it, for example jenkins)
+#CI process usage - int (CI rules like "immediately fix broken build" etc.)
+
+
+
+Continuous Delivery :
+#CD Fundamentals - nov (can explain the CD pipeline)
+
+
+
+UNIT and API testing (WHITE BOX) :
+#Unit testing - nov (writes unit tests and understands the purpose)
+#Mocking Libraries - int (experience with at least one tool like Moq)
+#TDD and BDD approaches - nov (can explain both, Uses TDD)
+#Test Doubles - int (can explain what it is and can explain the diffrence between test doubles)
+#Testing pyramid - int (Explains pyramid, describes benefits versus Testing Ice-Cream)
+
+
+
+Logging :
+#Logging fundamentals - nov (explains the purpose of logging, understands logging levels)
+#Logging implementation - int (Has experience with tools like Log4Net, Log4j etc.)
+
+
+
+Health Check :
+#Monitoring fundamentals - nov (explains main approaches for monitoring https://thenewstack.io/the-hows-whys-and-whats-of-monitoring-microservices/ )
+
+
+
+TroubleShooting :
+#Debugging - nov (successfuly debugs simple cases)
+#Advanced debugging - int (conditional breakpoints, debugs multithreading, remote process debug, SQL debugging)
+
+
+
+Software development process :
+#Software development process - nov (lifecycle overview + major stages and roles, CI concept, programming style standards, issue tracking systems, backlog, iterative development)
+
+
+
+Estimations :
+#Estimations concepts - nov (understands estimations concepts)
+
+
+
+Scrum/Agile :
+#Scrum/Agile - nov (agile development methodologies)
+
+
+
+RUP/Waterfall/XP :
+#Development lifecycle - nov
+#RUP concepts - nov
+#Waterfall concepts - nov
+#XP concepts - nov
+#Continuous Integration - int
+#Planning game - int
+#Refactoring - int
+#RUP in practise - int
+#TDD - int
+
+
+
+BASE IT knowledge :
+#Clean Code - nov (DRY, SOLID, YAGNI, OOP)
+#Computer science fundamentals - nov (Data structures stack array linked list queue bag, basic algorithms, merge and quick sort, hash tables, hash functions, priority queue/heap, Union-find structure and algorithms)
+#Version control principles - nov (centralized vs distributed, update checkout commit merge conflict resolving, compare git to svn)
+#Automation concepts - int (cmd scripts, powershell scripts, msbuild, CI using cruise control or teamcity, overview of other scripting languages like python node.js and csipts)
+#Computer science - int (divide and conquer algorithms, graph data structure, bfs, dfs, greedy algorithms
+https://en.wikipedia.org/wiki/Breadth-first_search
+https://en.wikipedia.org/wiki/Depth-first_search
+https://en.wikipedia.org/wiki/Divide-and-conquer_algorithm
+https://en.wikipedia.org/wiki/Graph_(abstract_data_type) )
+#Computers and networks - int (OSI model, network fundamentals, HTTPS, http, ftp, smtp, dns, can use ping nslookup tracert telnet curl)
+#XML concepts - int (xml overview, XPath concepts, XSD concepts, XSLT, SAX Simple api for xml)
+
+
+
+Architecture knowledge :
+#Layered architecture - nov (typical layers of enterprise software https://docs.microsoft.com/en-us/previous-versions/msp-n-p/ee658116(v=pandp.10) )
+#Synthesis of solutions - nov
+#Typically architecture bugs - nov
+#UML Basics for Developers - nov (can use diagrams, case diagrams, class diagram, sequence diagram, knows the diffrence between strucctural and behavioral diagrams)
+
+
+
+.NET Development :
+#.NET Framework fundamentals - int (what is .NET, what is CLR, what is CIL, delegates, events, namespaces, what is strongly typed language)
+#Debugging fundamentals - int (conditional breakpoints, watch values, call stack, break on exception, System.diagnostics.debug for debugging output)
+#Exception handling - nov
+#LINQ - nov (Lazy evaluation, declarative syntax, aggregate functions, joining grouping, LINQ TO SQL, LINQ TO XML)
+#OOP fundamentals - int
+#Unit-testing fundamentals - nov (experience with unit test framework)
+#.NET Framework - int (Assemblies, Global Assembly Cache, IDisposable, Type Marshaling, Generics, Extension Methods, Attributes, Dynamics, Annonymous Types, Lambda expressions)
+#Application architecture concepts - int (Component-based architecture, Layered architecture, MVC, MVVM, MVP, Object relational mapping)
+#Application configuration principles - int (understanding of app.config and web.config structure, also .sln and .proj files, custom config sections, manage user and application settings)
+#Inversion of control principles, base libraries - int (Dependency Inversion vs Inversion of Control vs Dependency Injection, unity, MEF)
+#TDD, Unit tests, BDD - int (TDD, BDD, Mocking/Stubbing, Code coverage/tools)
+
+
+
+.NET WEB DEVELOPMENT :
+#HTML/CSS - nov (html structure, elements, basic knowledge of html and css)
+#HTTP Fundamentals - nov (HTTP protocol, important headers, caching, connection specific)
+#IIS fundamentals - nov (How IIS works, IIS integrated vs classic mode, ASP.NET in IIS)
+#JavaScript - nov (breef overview of JS)
+#Web concepts (request, respobnse, http context)
+
+
+
+ASP.NET MVC Development :
+#ASP.NET MVC Structure - nov (overview, naming conventions, pipeline, life cycle, request handling)
+#Controller layer - nov (controllers understanding, action methods, ActionResult processing)
+#Hosting of MVC app - nov (IIS Deployment)
+#MVC principles - nov (compare MVC with MVP, MVVM, compare MVC with webforms, Bundling)
+#Request handling - nov (request lifecycle and pipeline, routing concepts, custom action results, filters concept, custom filters, dependency injection)
+#View layer - nov (View engine concept, partial views, helpers, layouts, ViewData and ViewBag, Html.Partial, RenderPartial, Action/RenderAction, Validation)
+
+
+
+.NET Back-End Development :
+#Message queues - nov (msg queues understanding, use cases, for example NServiceBus + RabbitMQ or Azure Service Bus)
+#Service fundamentals - nov (web services definition and attributes, basics of SOAP and XMLRPC)
+#Working with XMl - nov (XML-related .NET classes, XmlDocument vs XDocument, loading XML, modifying and quering )
+#Caching concepts - int (Caching principles goals strategies and writing policies, distributed cache https://docs.microsoft.com/en-us/dotnet/framework/performance/caching-in-net-framework-applications )
+#Logging concepts - int (Logging principles, log3net, NLog, El etc.)
+#Serialization concepts - int (concepts overview, .NET BCL classes related)
+#Windows services - int (overview, service lifecycle, communication with service from user session)
+
+
+
+.NET RESTFUL Services and WEBApi :
+#WebApi Fundamentals - nov (pipeline, basic routing and action selection, media formatting)
+#WebAPI and Odata - int (using OData with WebAPI)
+#WebAPI Hosting - int (hosting models : IIS and custom)
+#WebAPI intermediate - int (model validation, security : SSL and CSRF, attribute routing)
+
+
+
+.NET DATA Access Development :
+#ADO.NET fundamentals - nov (data providers, commands, command parameters, dataadapters and datareaders, connection pool, BLOB handling)
+#SQL fundamentals - nov (Joining, Grouping, Aggregate functions, Union, Union All, Intersect)
+#Database scripting - int (DDL operations, Upgrading database structure. Re-entrant database scripts)
+#ORM fundamentals with Entity Framework - int (Basic concepts, mapping, relationships mapping, inheritance mapping)
+#Overview of micro ORMs - int (Dapper, BLToolkit, Sqlfu)
+
+
+
+DATABASE Development :
+#Base DDL-queries - nov (create, alter, drop)
+#Base DML-queries - nov (select, insert, update, delete)
+#Database architecture concepts - nov (normalization, relationships, constraints, referential integrity, Database tables views and triggers)
+#Stored procedures - nov (stored procedures and functions overview)
+#Base DCL-queries - int (Grant, Revoke)
+
+
+
+MS SQL Server DB Development :
+#Simple SQL server administration - nov (backup, restore, security concepts)
+#SQL profiler - nov (overview)
+#SQL server tools - nov (SSMS, SQL Server Data Tools)
+#Stored procedures and functions - nov (overview)
+#Transactions, hints - nov (Transaction isolation levels, savepoints, nested transactions, locking, optimistic concurrency)
+#T-SQL features - nov (data types, working with date and time, type conversion, XML support, Exception handling, derived tables, common table expressions, pivotting/unpivotting data, OVER clause, APPLY operator)
+#Dynamic SQL - int (what is it, ways to run dynamic SQL example : EXEC, sp_executesql, dynamic SQL query parameters)
+#Query optimization - int (Join algorithms, using hints, query tuning, tracing, index tuning, temporary tables)
+#Reporting - int (SQL server reporting services)
+#SQL memory and indexes - int (Clustered, non-clustered indexes, indexes on columns, XML indexes, Filtered indexes)
+#Triggers - int (DDL, DML, logon, INSTEAD OF Triggers)
+#Views - int (Views, Updatable views, indexed views)
+
+
+
+FUNCTIONAL TESTING : 
+#Functional testing fundamentals - nov 
+
+
+
+DESIGN PATTERNS : 
+#Gang of four
+
+
+
+
+.NET WEB-Services and WCF - ? ? ? ? ? 
+.NET WPF DEVELOPMENT - ? ? ? ? ?
+ASP.NET Webforms Development - ? ? ? ? ?
+.NET WinForm Development - ? ? ? ? ? 
+UX Development - ? ? ? ? ? 
+User Experience Design - ? ? ? ? ? 
+Business Analysis - ? ? ? ? ? 
+ORACLE DATABASE SERVER DB DEVELOPMENT - ? ? ? ? ? 
+
+
+
+
+
