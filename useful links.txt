@@ -1,0 +1,7 @@
+http://scotthannen.org/blog/2019/01/01/interface-segregation-principle-applied.html
+
+
+https://www.hanselman.com/blog/WhatNETDevelopersOughtToKnowToStartIn2017.aspx
+
+
+https://www.c-sharpcorner.com/article/C-Sharp-heaping-vs-stacking-in-net-part-i/
